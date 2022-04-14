@@ -28,3 +28,21 @@ for(i = 0 ; i < 30; i++){
 }
 
 console.log(cars);
+
+let carsFilter = cars.filter(function(vehicle){
+    return vehicle.model == 'GT'
+});
+
+console.log(carsFilter)
+
+let carsMap = cars.map(function(vehicle){
+    return vehicle.model
+});
+
+console.log(carsMap);
+
+let carsFind = cars.find(function(vehicles){
+    return vehicles.brand === 'Fiat'
+});
+
+console.log(carsFind);
